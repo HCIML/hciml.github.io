@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Bayesian Model Selection"
-author: kiryl
 categories: [ General, model evaluation ]
 image: assets/images/9.jpg
 ---

@@ -29,7 +29,7 @@ $$
     p(\mathcal{D}|M_i) = \int p(\mathcal{D}|\theta_i,M_i)p(\theta_i|M_i)d\theta_i
 $$
 
-For $N$ i.i.d. data points the likelihood takes the form:
+For \( N \) i.i.d. data points the likelihood takes the form:
 
 $$
     p(\mathcal{D}|M_i) = \int p(\theta_i|M_i)\prod^N_{n=1}p(x^n|\theta_i,M_i)d\theta_i
@@ -52,21 +52,22 @@ $$
     \log p(\mathcal{D}|M) \approx \log p(\mathcal{D}|\boldsymbol{\theta}^*,M)+\log p(\boldsymbol{\theta}^*|M)+\frac{1}{2}\log \det (2\pi \textbf{H}^{-1})
 $$
 
-Hereby \textbf{H} is the Hessian of the negative log posterior evaluated at $\boldsymbol{\theta}^*$.
+Hereby \textbf{H} is the Hessian of the negative log posterior evaluated at $\boldsymbol{\theta}^*$ .
+
 ## BIC Approximation
-An even simpler method is to crudely approximate the Hessian $\textbf{H}$ by taking $\textbf{H}\approx N\boldsymbol{I}_k$ where $K=\dim(\boldsymbol{\theta})$ is the number of model parameters. With this Hessian the Laplace approximation is:
+An even simpler method is to crudely approximate the Hessian \( \textbf{H}$ by taking $\textbf{H}\approx N\boldsymbol{I}_k \) where  \( K=\dim(\boldsymbol{\theta}) \) is the number of model parameters. With this Hessian the Laplace approximation is:
 
 $$
     \log p(\mathcal{D}|M) \approx \log p(\mathcal{D}|\boldsymbol{D}|\boldsymbol{\theta}^*,M)+\log p(\boldsymbol{\theta}^*|M)+\frac{K}{2}(\log 2\pi -\log N)
 $$
 
-One can further approximate the prior and take $p(\boldsymbol{\theta}|M) = \mathcal{N}(\boldsymbol{\theta}|\boldsymbol{0},\textbf{I})$, which penalizes the length of the parameter vector and favorizing a simple model. With that the log-likelihood is:
+One can further approximate the prior and take \( p(\boldsymbol{\theta}|M) = \mathcal{N}(\boldsymbol{\theta}|\boldsymbol{0},\textbf{I}) \) , which penalizes the length of the parameter vector and favorizing a simple model. With that the log-likelihood is:
 
 $$
     \log p(\boldsymbol{D}|M) \approx \log p(\matcal{D}|\boldsymbol{\theta}^*,M)-\frac{1}{2}(\boldsymbol{\theta}^*)^T\boldsymbol{\theta}^*-\frac{K}{2}\log N
 $$
 
-By ignoring the penalty term for large $N$ one arrives at the definition of the \textbf{Bayes Information Criterion (BIC)}:
+By ignoring the penalty term for large \( N \) one arrives at the definition of the \textbf{Bayes Information Criterion (BIC)}:
 
 $$
     BIC = K\log N -2\log p(\matcal{D}|\boldsymbol{\theta}^*,M)

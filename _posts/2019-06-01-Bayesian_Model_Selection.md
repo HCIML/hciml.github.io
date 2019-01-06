@@ -2,7 +2,7 @@
 layout: post
 title:  "Bayesian Model Selection"
 categories: [ General, model evaluation ]
-author: none
+author: ghost
 image: assets/images/9.jpg
 ---
 For a fixed set of models the model posterior probability of a model given some data is:

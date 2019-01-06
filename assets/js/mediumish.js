@@ -1,3 +1,13 @@
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+    displayMath: [ ['$$','$$'], ['\[','\]'] ]
+    processEscapes: true
+    processEnvironments: true
+    preview: "TeX"
+  }
+});
+
 jQuery(document).ready(function($){
 
     var offset = 1250; 

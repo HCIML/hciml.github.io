@@ -42,7 +42,7 @@ $$
 $$
 
 ## Laplace method
-For computing the model likelihood the integral is usually intractable and has to be approximated. The Laplace method to approximate the model log-likelihood for a Gaussian-like posterior is to find $\boldsymbol{\theta}^*$ via MAP and to fit a Gaussian to this point in the parameter space based on the local curvature:
+For computing the model likelihood the integral is usually intractable and has to be approximated. The Laplace method to approximate the model log-likelihood for a Gaussian-like posterior is to find /( \boldsymbol{\theta}^* /) via MAP and to fit a Gaussian to this point in the parameter space based on the local curvature:
 
 $$
     \boldsymbol{\theta}^* = \underset{\boldsymbol{\theta}}{\operatorname{argmax}} \mbox{ }p (\mathcal{D}|\boldsymbol{\theta},M)p(\boldsymbol{\theta}|M)
@@ -52,7 +52,7 @@ $$
     \log p(\mathcal{D}|M) \approx \log p(\mathcal{D}|\boldsymbol{\theta}^*,M)+\log p(\boldsymbol{\theta}^*|M)+\frac{1}{2}\log \det (2\pi \textbf{H}^{-1})
 $$
 
-Hereby \textbf{H} is the Hessian of the negative log posterior evaluated at $\boldsymbol{\theta}^*$ .
+Hereby \textbf{H} is the Hessian of the negative log posterior evaluated at /( \boldsymbol{\theta}^* /) .
 
 ## BIC Approximation
 An even simpler method is to crudely approximate the Hessian \( \textbf{H}$ by taking $\textbf{H}\approx N\boldsymbol{I}_k \) where  \( K=\dim(\boldsymbol{\theta}) \) is the number of model parameters. With this Hessian the Laplace approximation is:

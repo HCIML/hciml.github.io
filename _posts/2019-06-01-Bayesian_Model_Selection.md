@@ -55,7 +55,7 @@ $$
 Hereby \textbf{H} is the Hessian of the negative log posterior evaluated at \( \boldsymbol{\theta}^* \) .
 
 ## BIC Approximation
-An even simpler method is to crudely approximate the Hessian \( \textbf{H}$ by taking $\textbf{H}\approx N\boldsymbol{I}_k \) where  \( K=\dim(\boldsymbol{\theta}) \) is the number of model parameters. With this Hessian the Laplace approximation is:
+An even simpler method is to crudely approximate the Hessian \( \textbf{H} /) by taking /( \textbf{H}\approx N\boldsymbol{I}_k \) where  \( K=\dim(\boldsymbol{\theta}) \) is the number of model parameters. With this Hessian the Laplace approximation is:
 
 $$
     \log p(\mathcal{D}|M) \approx \log p(\mathcal{D}|\boldsymbol{D}|\boldsymbol{\theta}^*,M)+\log p(\boldsymbol{\theta}^*|M)+\frac{K}{2}(\log 2\pi -\log N)

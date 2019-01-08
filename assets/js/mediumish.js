@@ -1,11 +1,11 @@
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [ ['$','$'], ['\(','\)'] ]
-    displayMath: [ ['$$','$$'], ['\[','\]'] ]
-    processEnvironments: true
-    preview: "TeX"
-  }
-});
+//MathJax.Hub.Config({
+//  tex2jax: {
+//    inlineMath: [ ['$','$'], ['\(','\)'] ]
+//    displayMath: [ ['$$','$$'], ['\[','\]'] ]
+//    processEnvironments: true
+//    preview: "TeX"
+//  }
+//});
 
 jQuery(document).ready(function($){
 

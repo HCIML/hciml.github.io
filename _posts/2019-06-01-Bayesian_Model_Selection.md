@@ -63,7 +63,9 @@ $$
 
 One can further approximate the prior and take 
 
-\\( p(\boldsymbol{\theta}|M) = \mathcal{N}(\boldsymbol{\theta}|\boldsymbol{0},\boldsymbol{I}) \\) 
+$$
+  p(\boldsymbol{\theta}|M) = \mathcal{N}(\boldsymbol{\theta}|\boldsymbol{0},\boldsymbol{I}) 
+$$
 
 , which penalizes the length of the parameter vector and is favorizing a simple model. With that the log-likelihood is:
 

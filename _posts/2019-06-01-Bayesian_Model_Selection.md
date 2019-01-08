@@ -76,5 +76,5 @@ $$
 BIC is closely related to the \textbf{Akaike Information Criterion (AIC)} which is:
 
 $$
-    AIC = 2K-2\log p(\matcal{D}|\boldsymbol{\theta}^*,M) 
+    AIC = 2K-2\log p(\mathcal{D}|\boldsymbol{\theta}^*,M) 
 $$

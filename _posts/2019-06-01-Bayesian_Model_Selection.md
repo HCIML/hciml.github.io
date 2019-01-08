@@ -61,7 +61,11 @@ $$
     \log p(\mathcal{D}|M) \approx \log p(\mathcal{D}|\boldsymbol{D}|\boldsymbol{\theta}^*,M)+\log p(\boldsymbol{\theta}^*|M)+\frac{K}{2}(\log 2\pi -\log N)
 $$
 
-One can further approximate the prior and take \\( p(\boldsymbol{\theta}|M) = \mathcal{N}(\boldsymbol{\theta}|\boldsymbol{0},\boldsymbol{I}) \\) , which penalizes the length of the parameter vector and is favorizing a simple model. With that the log-likelihood is:
+One can further approximate the prior and take 
+
+\\( p(\boldsymbol{\theta}|M) = \mathcal{N}(\boldsymbol{\theta}|\boldsymbol{0},\boldsymbol{I}) \\) 
+
+, which penalizes the length of the parameter vector and is favorizing a simple model. With that the log-likelihood is:
 
 $$
     \log p(\boldsymbol{D}|M) \approx \log p(\mathcal{D}|\boldsymbol{\theta}^*,M)-\frac{1}{2}(\boldsymbol{\theta}^*)^T\boldsymbol{\theta}^*-\frac{K}{2}\log N

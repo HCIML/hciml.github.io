@@ -61,7 +61,7 @@ $$
     \log p(\mathcal{D}|M) \approx \log p(\mathcal{D}|\boldsymbol{D}|\boldsymbol{\theta}^*,M)+\log p(\boldsymbol{\theta}^*|M)+\frac{K}{2}(\log 2\pi -\log N)
 $$
 
-One can further approximate the prior and take 
+One can further approximate the prior and take: 
 
 $$
   p(\boldsymbol{\theta}|M) = \mathcal{N}(\boldsymbol{\theta}|\boldsymbol{0},\boldsymbol{I}) 

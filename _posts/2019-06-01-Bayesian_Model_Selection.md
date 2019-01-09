@@ -7,7 +7,7 @@ image: assets/images/9.jpg
 ---
 For a fixed set of models the model posterior probability of a model given some data is:
 
-\small( $$ p(M_i|\mathcal{D}) = \frac{p(\mathcal{D}|M_i)p(M_i)}{p(\mathcal{D})} $$ )
+$$ \small(p(M_i|\mathcal{D}) = \frac{p(\mathcal{D}|M_i)p(M_i)}{p(\mathcal{D})}) $$ 
 
 The normalization is:
 

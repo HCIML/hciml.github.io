@@ -1,6 +1,6 @@
 ---
 layout: page
-title: For interested reader
+title: For the interested reader
 comments: true
 ---
 

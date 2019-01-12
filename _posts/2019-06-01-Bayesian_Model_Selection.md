@@ -4,7 +4,7 @@ title:  "Basic: Bayesian Model Selection"
 categories: [ General, model evaluation ]
 author: ghost
 featured: true
-image: assets/images/9.jpg
+image: assets/images/1.jpeg
 ---
 
 The goal of this short post is to discuss on Bayesian Model Selection being an effective theoretical tool of assessing relative performance  of a fixed number of models at hand. Having a fixed set of models the **model posterior probability** of a model given some data is:

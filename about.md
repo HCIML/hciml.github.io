@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: For interested reader
 comments: true
 ---
 
-This website is built with Jekyll and Mediumish template for Jekyll. It is meant for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github. This page in example shows a page layout.
+This website emerged from the idea to boil down distinct ideas to an article which can be portably read accompanying..., well a good cup of Coffee or Latte Macchiato, or whatever is the day's choice. To accomplish this I outsourced the mathematical proofs and elementary concepts to be looked up in the respective literature. Basic mathematical understanding is a prerequisite. What counted more for me in the design of the articles is the connection of concepts, which, for me, is the main drive of creative thinking, coming up with new ideas and grasping the whole picture in a reasonable amount of time. 
 
 ![jekyll template mediumish]({{site.baseurl}}/assets/images/mediumish-jekyll-template.png){: .shadow}
 

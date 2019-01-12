@@ -31,7 +31,7 @@ $$
     \small  \sum_{y \in Y}p(y|x) = 1
 $$
 
-with \\( y \in Y \/ f(x) \\) is \\( y \\) except for the predicted class and \\( p(y | x) \\) is the true posterior which one does not have straightfowardly. One can interpret the result as: the posterior probability of predicted class must be large to minimize the expected risk, i.e. MAP. For 0-1-loss function the ideal classifier is therefore:
+with \\( y \in Y \div f(x) \\) is \\( y \\) except for the predicted class and \\( p(y | x) \\) is the true posterior which one does not have straightfowardly. One can interpret the result as: the posterior probability of predicted class must be large to minimize the expected risk, i.e. MAP. For 0-1-loss function the ideal classifier is therefore:
 
 $$
     \small  f(x) = \underset{z \in Y}{\operatorname{argmax}} p(z|x)

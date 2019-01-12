@@ -1,6 +1,6 @@
 # Site
 name: "Blog"
-description: "Blog featuring articles on Physics and Machine Learning"
+description: "Blog featuring articles on topics in Physics and Machine Learning"
 meta_description: "Blog on topics in AI"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'

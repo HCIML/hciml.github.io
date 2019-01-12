@@ -3,6 +3,7 @@ layout: post
 title:  "Basic: Bayesian Model Selection"
 categories: [ General, model evaluation ]
 author: ghost
+featured: true
 image: assets/images/9.jpg
 ---
 

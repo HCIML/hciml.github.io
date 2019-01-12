@@ -52,4 +52,4 @@ $$
 	p(\mu,\sigma^2 \vert \mathcal{X}) \propto \mathcal{N}(\mathcal{X} \vert \mu,\sigma^2)\mathcal{N}(\mu \vert \mu_0,\sigma_0^2)p(\sigma^2) 
 $$
 
-With the constraint \\( \sigma_0^2 = \text{const.}\cdot\sigma^2 \\) one finds for the \\( p(\sigma^2) \\) part of the prior, that the Inverse-Gamma distribution is conjugate. Therefore the whole prior should take the **Gauss-Inverse-Gamma** form and has a Gauss-Inverse-Gamma conjugate posterior.
+With the constraint \\( \sigma_0^2 = \text{const.}\cdot\sigma^2 \\) one finds for the \\( p(\sigma^2) \\) part of the prior, that the **Inverse-Gamma** distribution is conjugate. Therefore the whole prior should take the **Gauss-Inverse-Gamma** form and has a Gauss-Inverse-Gamma conjugate posterior.

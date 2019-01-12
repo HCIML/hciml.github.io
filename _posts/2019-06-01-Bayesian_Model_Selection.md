@@ -52,9 +52,9 @@ $$
 
 One can further approximate the prior and take: 
 
-$$ \small p(\boldsymbol{\theta}|M) = \mathcal{N}(\boldsymbol{\theta}|\boldsymbol{0},\boldsymbol{I}) $$
+$$ \small p(\boldsymbol{\theta}|M) = \mathcal{N}(\boldsymbol{\theta}|\boldsymbol{0},\boldsymbol{I}), $$
 
-, which penalizes the length of the parameter vector and is favorizing a simple model. With that the log-likelihood is:
+which penalizes the length of the parameter vector and is favorizing a simple model. With that the log-likelihood is:
 
 $$ \small
     \log p(\boldsymbol{D}|M) \approx \log p(\mathcal{D}|\boldsymbol{\theta}^*,M)-\frac{1}{2}(\boldsymbol{\theta}^*)^T\boldsymbol{\theta}^*-\frac{K}{2}\log N

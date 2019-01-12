@@ -11,7 +11,7 @@ $$
 	\mathcal{N}(\textbf{x}|\boldsymbol{\mu}, \boldsymbol{\Sigma}) = \frac{1}{\sqrt{\det (2\pi) \boldsymbol{\Sigma}}}e^{-\frac{1}{2}(\textbf{x}-\boldsymbol{\mu})^T\boldsymbol{\Sigma}^{-1}(\textbf{x}-\boldsymbol{\mu})}
 $$
 
-with the **precision matrix** \\( \boldsymbol{\Sigma}^{-1} \)) . 
+with the **precision matrix** \\( \boldsymbol{\Sigma}^{-1} \\) . 
 
 ## Maximum Likelihood training (i.i.d.)
 

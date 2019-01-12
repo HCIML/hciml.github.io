@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bayesian Model Selection"
+title:  "Basic: Bayesian Model Selection"
 categories: [ General, model evaluation ]
 author: ghost
 image: assets/images/9.jpg

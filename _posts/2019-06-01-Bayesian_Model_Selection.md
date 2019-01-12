@@ -6,7 +6,7 @@ author: ghost
 image: assets/images/9.jpg
 ---
 
-The goal of this short post is to discuss on Bayesian Model Selection as an effective theoretical tool of assessing relative performance  of a fixed number of models at hand. 
+The goal of this short post is to discuss on Bayesian Model Selection being an effective theoretical tool of assessing relative performance  of a fixed number of models at hand. 
 
 For a fixed set of models the model posterior probability of a model given some data is:
 

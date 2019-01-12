@@ -3,7 +3,7 @@ layout: post
 title:  "Basic: Learning A Gaussian"
 categories: [ General, model evaluation ]
 author: ghost
-image: assets/images/2.jpeg
+image: assets/images/3.jpg
 ---
 
 $$

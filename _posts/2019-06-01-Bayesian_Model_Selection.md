@@ -8,7 +8,7 @@ image: assets/images/9.jpg
 
 The goal of this short post is to discuss on Bayesian Model Selection being an effective theoretical tool of assessing relative performance  of a fixed number of models at hand. 
 
-For a fixed set of models the model posterior probability of a model given some data is:
+For a fixed set of models the **model posterior probability** of a model given some data is:
 
 $$ \small p(M_i|\mathcal{D}) = \frac{p(\mathcal{D}|M_i)p(M_i)}{p(\mathcal{D})} $$ 
 
@@ -16,19 +16,19 @@ The normalization constant is evaluated to:
 
 $$ \small p(\mathcal{D}) = \sum^m_{i=1} p(\mathcal{D}|M_i)p(M_i) $$
 
-The performance of a model can be accessed by the relative probability of the model of interest:
+The performance of a model can be accessed by the **relative probability of the model of interest**:
 
 $$ \small \frac{p(M_i|\mathcal{D})}{p(M_j|\mathcal{D})} = \frac{p(\mathcal{D}|M_i)}{p(\mathcal{D}|M_j)} \frac{p(M_i)}{p(M_j)} $$
 
-The model likelihood for continuous model parameters is given as:
+The **model likelihood** for continuous model parameters is given as:
 
 $$ \small p(\mathcal{D}|M_i) = \int p(\mathcal{D}|\theta_i,M_i)p(\theta_i|M_i)d\theta_i $$
 
-For \\( N \\) i.i.d. data points the likelihood takes the form:
+For \\( N \\) i.i.d. data points the model likelihood takes the form:
 
 $$ \small p(\mathcal{D}|M_i) = \int p(\theta_i|M_i)\prod^N_{n=1}p(x^n|\theta_i,M_i)d\theta_i $$
 
-and the unnormalized log-posterior is:
+and the **unnormalized log-posterior** is:
 
 $$ \small \log p(\mathcal{D}|M_i)p(M_i) = \log p(\boldsymbol{\theta}|M) + \sum^N_{n=1}\log p(x^n|\boldsymbol{\theta},M) $$
 

@@ -7,9 +7,12 @@ image: assets/images/2.jpeg
 ---
 
 
-Statistical Decision Theory is the "Schroedinger Equation" of classification answers questions. \\
-What does the best conceivable classifier look like? *Bayes classifier*. \\
-How good is this classifier? *Bayes risk*. \\
+Statistical Decision Theory is the "Schroedinger Equation" of classification answers questions. 
+
+What does the best conceivable classifier look like? *Bayes classifier*. 
+
+How good is this classifier? *Bayes risk*. 
+
 Define the **Loss function** \\( L(y,\hat{y}) \\) where \\( y \\) is the true and \\( \hat{y} \\) predicted class, e.g. symmetric/asymmetric *0-1-loss*. Aim of classification is to minimize the expected loss="risk"  \\( R \\) of classifier \\( f \\):
 \[
     \small R(f) := \mathbb{E}_x\mathbb{E}_yL(y,f(x)) = \int_x\mathbb{E}_yL(y,f(x))p(x)dx = \sum_{y\in Y}\sum_{z\in Y}L(y,z)I[f(x)=z]p(y|x)

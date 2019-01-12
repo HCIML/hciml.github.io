@@ -14,7 +14,7 @@ The normalization constant is evaluated to:
 
 $$ \small p(\mathcal{D}) = \sum^m_{i=1} p(\mathcal{D}|M_i)p(M_i) $$
 
-The performance of a model can be accessed by the **relative probability of the model of interest**:
+The performance of a model can be accessed by the **relative probability of the model** of interest:
 
 $$ \small \frac{p(M_i|\mathcal{D})}{p(M_j|\mathcal{D})} = \frac{p(\mathcal{D}|M_i)}{p(\mathcal{D}|M_j)} \frac{p(M_i)}{p(M_j)} $$
 

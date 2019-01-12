@@ -28,7 +28,7 @@ is the sample covariance.
 
 ## Bayesian training (i.i.d., univariate)
 
-For the Bayesian training we need the posterior, conjugate prior and Likelihood. The Likelihood \\( \mathcal{N}(\mathcal{X}|mu,\sigma^2) \\) is a Gaussian. The posterior is:
+For the Bayesian training we need the posterior, conjugate prior and Likelihood. The Likelihood \\( \mathcal{N} (\mathcal{X} \vert mu,\sigma^2) \\) is a Gaussian. The posterior is:
 
 $$
 	p(\mu,\sigma^2|\mathcal{X}) \propto p(\mathcal{X}|\mu,\sigma^2)p(\mu,\sigma^2)=p(\mathcal{X}|\mu, \sigma^2)p(\mu|\sigma^2)p(\sigma^2) 
@@ -40,16 +40,16 @@ $$
 p(\mu|\sigma^2)p(\sigma^2) 
 $$
 
-The convenient choice for the prior on the mean \\( p(\mu|\sigma^2) \\) is that it is a Gaussian centered around a \\( \mu_0 \\):
+The convenient choice for the prior on the mean \\( p(\mu \vert \sigma^2) \\) is that it is a Gaussian centered around a \\( \mu_0 \\):
 
 $$
-	p(\mu|\sigma^2) = p(\mu|\mu_0,\sigma_0^2) = \mathcal{N}(\mu|\mu_0,\sigma_0^2) 
+	p(\mu \vert \sigma^2) = p(\mu|\mu_0,\sigma_0^2) = \mathcal{N}(\mu \vert \mu_0,\sigma_0^2) 
 $$
 
 The posterior is correspondingly:
 
 $$
-	p(\mu,\sigma^2|\mathcal{X}) \propto \mathcal{N}(\mathcal{X}|\mu,\sigma^2)\mathcal{N}(\mu|\mu_0,\sigma_0^2)p(\sigma^2) 
+	p(\mu,\sigma^2 \vert \mathcal{X}) \propto \mathcal{N}(\mathcal{X} \vert \mu,\sigma^2)\mathcal{N}(\mu \vert \mu_0,\sigma_0^2)p(\sigma^2) 
 $$
 
 With the constraint \\( \sigma_0^2 = \text{const.}\cdot\sigma^2 \\) one finds for the \\( p(\sigma^2) \\) part of the prior, that the Inverse-Gamma distribution is conjugate. Therefore the whole prior should take the **Gauss-Inverse-Gamma** form and has a Gauss-Inverse-Gamma conjugate posterior.

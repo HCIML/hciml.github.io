@@ -9,9 +9,9 @@ image: assets/images/2.jpeg
 
 Statistical Decision Theory is the "Schroedinger Equation" of classification answers questions. 
 
-What does the best conceivable classifier look like? *Bayes classifier*. 
+*What does the best conceivable classifier look like? - Bayes classifier*. 
 
-How good is this classifier? *Bayes risk*. 
+*How good is this classifier - Bayes risk*. 
 
 Define the **Loss function** \\( L(y,\hat{y}) \\) where \\( y \\) is the true and \\( \hat{y} \\) predicted class, e.g. symmetric/asymmetric *0-1-loss*. Aim of classification is to minimize the expected loss="risk"  \\( R \\) of classifier \\( f \\):
 \[

@@ -5,6 +5,8 @@ categories: [ General, model evaluation ]
 author: ghost
 image: assets/images/3.jpg
 ---
+Similarly to the fact that the whole Quantum Field Theory is based on Fourier analysis, because the Harmonic Oscillator is the only simple model that can be solved in this contexct analytically, the most widely used model in multivarite statistics is the Gaussian. Its mathematical properties include well-definedness in arbitrary dimensions and relative simplicity, with a good descriptive power for empirical data, which originates from the **Central Limit Theorem**.
+
 The multivariate Gaussian is defined as: 
 
 $$

@@ -12,7 +12,7 @@ What counted more for me in the design of the articles is the connection of conc
 
 The articles are divided into three difficulty levels, which is basic, intermediate and advanced, based on some arbitrary criteria. The category might might also hint on the order, in which the articles might be consumed. 
 
-Welcome, *välkommen*, enjoy and in case of fire leave a comment! 
+Welcome, *välkommen* and enjoy! 
 
 <!--![jekyll template mediumish]({{site.baseurl}}/assets/images/mediumish-jekyll-template.png){: .shadow}-->
 

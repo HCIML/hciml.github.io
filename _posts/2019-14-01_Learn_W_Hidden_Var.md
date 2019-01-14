@@ -36,6 +36,7 @@ $$
 
 In MCAR case the model is completely unbiased. MCAR is almost never the case.
 
+[comment]: # (
 ## Variational Expectation Maximization
 
 Hidden variables prevent decoupling of marginals. The theoretical discussion in this chapter shows how EM is aimed on replacing the objective function by the lower bound where the coupling is removed.
@@ -201,3 +202,4 @@ $$ \small
 $$
 
 EM is a special case of Variational Bayes with a flat prior  \\(p(\theta) = const. \\) and delta function approximation of the parameter posterior \\( q(\theta) = \delta (\theta, \theta^*)\\) .
+)

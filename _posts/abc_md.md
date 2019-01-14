@@ -3,6 +3,7 @@ layout: post
 title:  "ABC"
 categories: [ General, model evaluation ]
 author: ghost
+featured: true
 image: assets/images/2.jpeg
 ---
 

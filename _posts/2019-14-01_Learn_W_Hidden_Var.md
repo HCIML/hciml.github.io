@@ -12,26 +12,30 @@ New components of a model are hidden/latent variables \\( x_h \)), i.e. paramete
 In general the probability of a special outcome of \\( x_v,\textbf{I}_m\\) will be:
 
 $$ \small
-    p(x_v,\textbf{I}_m|\theta) = \sum_{x_i}p(x_v,x_i,\textbf{I}_m|\theta) =  \sum_{x_i}p(\textbf{I}_m|x_v,x_h,\theta)p(x_v,x_i|\theta)
+
+    p(x_v,\textbf{I}_m \vert \theta) = \sum_{x_i}p(x_v,x_i,\textbf{I}_m \vert \theta) =  \sum_{x_i}p(\textbf{I}_m \vert x_v,x_h,\theta)p(x_v,x_i \vert \theta)
 $$
 
 One can further assume that the generation process for missing variables only depends on visible variables which is called **missing at random (MAR)**:
 
 $$ \small
-    p(\textbf{I}_m|x_v,x_h,\theta) = p(\textbf{I}_m|x_v)
+
+    p(\textbf{I}_m \vert x_v,x_h,\theta) = p(\textbf{I}_m \vert x_v)
 $$
 
 With that the probability of the observables of the model is:
 
 $$ \small
-    p(x_v,\textbf{I}_m|\theta) = p(\textbf{I}_m|x_v)p(x_v|\theta)
+
+    p(x_v,\textbf{I}_m \vert \theta) = p(\textbf{I}_m \vert x_v)p(x_v \vert \theta)
 $$
 
 and the parameters can be accessed from the marginal likelihood. MAR is an assumption that cannot be verified statistically.
 The **missing completely at random assumption (MCAR)** requires that the generation process of missing variables is completely independent of the model entities:
 
 $$ \small
-    p(\textbf{I}_m|x_v,x_h,\theta) = p(\textbf{I}_m)
+
+    p(\textbf{I}_m \vert x_v,x_h,\theta) = p(\textbf{I}_m)
 $$
 
 In MCAR case the model is completely unbiased. MCAR is almost never the case.
@@ -41,46 +45,53 @@ In MCAR case the model is completely unbiased. MCAR is almost never the case.
 
 Hidden variables prevent decoupling of marginals. The theoretical discussion in this chapter shows how EM is aimed on replacing the objective function by the lower bound where the coupling is removed.
 
-Consider a single visible variable \\( v \\) and a single hidden variable \\( h \\). One wishes to set \\( \theta \\) for the model \\( \p(v,h|\theta) \) by maximizing the marginal likelihood \\( p(v|\theta) \). The Kullback-Leibler divergence between a 'variational' distribution \\( q(h|v) \\) and the model is:
+Consider a single visible variable \\( v \\) and a single hidden variable \\( h \\). One wishes to set \\( \theta \\) for the model \\( \p(v,h \vert \theta) \) by maximizing the marginal likelihood \\( p(v \vert \theta) \). The Kullback-Leibler divergence between a 'variational' distribution \\( q(h \vert v) \\) and the model is:
 
 $$ \small
-    KL(q(h|v)|p(h|v,\theta)) = <\log q(h|v) - \log p(h|v,\theta)>_{q(h|v)} \geq 0 \addtag \addtag
+
+    KL(q(h \vert v)|p(h \vert v,\theta)) = <\log q(h \vert v) - \log p(h \vert v,\theta)>_{q(h \vert v)} \geq 0 \addtag \addtag
 $$
 
 With the use of:
 
 $$ \small
-    p(h|v,\theta) = \frac{p(h,v|\theta)}{p(v|\theta)} \addtag
+
+    p(h \vert v,\theta) = \frac{p(h,v \vert \theta)}{p(v \vert \theta)} \addtag
 $$
 
 one can rewrite:
 
 $$ \small
-    KL(q(h|v)|p(h|v,\theta)) = <\log q(h|v)>_{q(h|v)} - <\log p(h,v|\theta)>_{q(h|v)}+\log p(v|\theta) \geq 0  \addtag
+
+    KL(q(h \vert v)|p(h \vert v,\theta)) = <\log q(h \vert v)>_{q(h \vert v)} - <\log p(h,v \vert \theta)>_{q(h \vert v)}+\log p(v \vert \theta) \geq 0  \addtag
 $$
 
 This gives a lower bound on the marginal likelihood for a single training example:
 
 $$ \small
-    \log p(v|\theta) \geq -<\log q(h|v)>_{q(h|v)}+<\log p(h,v|\theta)>_{q(h|v)} = \text{Entropy} + \text{Energy} \addtag
+
+    \log p(v \vert \theta) \geq -<\log q(h \vert v)>_{q(h \vert v)}+<\log p(h,v \vert \theta)>_{q(h \vert v)} = \text{Entropy} + \text{Energy} \addtag
 $$
 
 The energy term is also called the 'expected complete data log likelihood'. Having more than one data point, i.i.d. data \\( \mathcal{V} \\), the full log likelihood is:
 
 $$ \small
-    \log p(\mathcal{V}|\theta) = \sum_{n=1}^N \log p(v^n|\theta)  \addtag
+
+    \log p(\mathcal{V} \vert \theta) = \sum_{n=1}^N \log p(v^n \vert \theta)  \addtag
 $$
 
 And the lower bound is:
 
 $$ \small
-    -\sum^N_{n=1}<\log q(h^n|v^n)>_{q(h^n|v^n)}+\sum^^N_{n=!}<\log p(h^n,v^n|\theta)>_{q(h^n|v^n)} := B(\mathcal{Q},\theta) \addtag
+
+    -\sum^N_{n=1}<\log q(h^n \vert v^n)>_{q(h^n \vert v^n)}+\sum^^N_{n=!}<\log p(h^n,v^n \vert \theta)>_{q(h^n \vert v^n)} := B(\mathcal{Q},\theta) \addtag
 $$
 
 where \\( \mathcal{Q} \\) is a set of variational distributions and the bound is again the sum of an energy term and an entropy term. The optimization of the lower bound is done via first optimizing the equation w.r.t. \\( \mathcal{Q} \\) keeping \\( \theta \\) constant \textbf{(E-step)} and then w.r.t. \\( \theta \\) keeping \\( \mathcal{Q} \\) constant **(M-step)**. The two steps are repeated until convergence. Since during the E-step \\( q \\) is fixed, it only maximizes the energy term (called classical EM). The steps are repeated until convergence. The fully optimal setting is:
 
 $$ \small
-    q(h^n|v^n) = p(h^n|v^n,\theta) \implies \log p(\mathcal{V}|\theta) = B(\mathcal{Q},\theta) \addtag
+
+    q(h^n \vert v^n) = p(h^n \vert v^n,\theta) \implies \log p(\mathcal{V} \vert \theta) = B(\mathcal{Q},\theta) \addtag
 $$
 
 Due to the local optimization the global maximum can not always be reached. By design of EM the lower bound is never decreased. A positive side effect is that the log likelihood is optimized too, i.e. is higher with the updated \\( \theta \\).
@@ -90,37 +101,43 @@ Due to the local optimization the global maximum can not always be reached. By d
 Given the general form of a BN:
 
 $$ \small
-    p(x) = \prod_i p(x_i|pa(x_i))
+
+    p(x) = \prod_i p(x_i \vert pa(x_i))
 $$
 
 and N variables \\( x=(v,h) \\) with its visible and hidden part the **energy term** is:
 
 $$ \small
-    \sum_n <\log p(x^n)>_{q_t(h^n|v^n)} = \sum_n\sum_i<\log p(x^n_i|pa(x_i^n))>_{q_t(h^n|v^n)} = N<\log p(x)>_{q_t(x)}
+
+    \sum_n <\log p(x^n)>_{q_t(h^n \vert v^n)} = \sum_n\sum_i<\log p(x^n_i \vert pa(x_i^n))>_{q_t(h^n \vert v^n)} = N<\log p(x)>_{q_t(x)}
 $$
 
 This expression is obtained by using the notation:
 
 $$ \small
-    q_t^n(x) := q_t(h^n|v^n)\delta (v,v^n)
+
+    q_t^n(x) := q_t(h^n \vert v^n)\delta (v,v^n)
 $$
 
 and defining a \textbf{mixture distribution}:
 
 $$ \small
+
     q_t(x) := \frac{1}{N}\sum^N_{n=1}q_t^n(x) 
 $$
 
 where \\( t \\) is the iteration index. The E-step is (without derivation):
 
 $$ \small
-    q_t(h^n|v^n)=p^{old}(h^n|v^n)
+
+    q_t(h^n \vert v^n)=p^{old}(h^n \vert v^n)
 $$
 
 The M-step is:
 
 $$ \small
-    p^{new}(x_i|pa(x_i))=\frac{\sum_nq^n_t(x_i,pa(x_i))}{\sum_{n'} q^{n'}_t (pa(x_i))}
+
+    p^{new}(x_i \vert pa(x_i))=\frac{\sum_nq^n_t(x_i,pa(x_i))}{\sum_{n'} q^{n'}_t (pa(x_i))}
 $$
 
 ## EM for Markov networks
@@ -128,13 +145,15 @@ $$
 Given the general form of a MN:
 
 $$ \small
-    p(v,h|\theta) = \frac{1}{Z(\theta)}\prod_c\phi_c(h,v|\theta_c), \mbox{ } Z(\theta) = \sum_{v,h}\prod^C_{c=1}\phi_c(h,v|\theta_c), \mbox{ } \theta = (\theta_1,...,\theta_C)
+
+    p(v,h \vert \theta) = \frac{1}{Z(\theta)}\prod_c\phi_c(h,v \vert \theta_c), \mbox{ } Z(\theta) = \sum_{v,h}\prod^C_{c=1}\phi_c(h,v \vert \theta_c), \mbox{ } \theta = (\theta_1,...,\theta_C)
 $$
 
 with clique parameters \\( \theta_c \\), one finds the variational bound as being:
 
 $$ \small
-    \log p(v|\theta)\geq -<\log p(x)>_{p(x)}+\sum_c<\log \phi_c(h,v|\theta_c)>_{q(h)}-\log Z(\theta)
+
+    \log p(v \vert \theta)\geq -<\log p(x)>_{p(x)}+\sum_c<\log \phi_c(h,v \vert \theta_c)>_{q(h)}-\log Z(\theta)
 $$
 
 where the first term is the entropy term. The bound only partially resolves the coupling, since the parameters are still coupled in the normalization term. One technique is to also put a bound on the normalization term. 
@@ -144,44 +163,50 @@ where the first term is the entropy term. The bound only partially resolves the 
 The generalization of EM is Variational Bayes. Since it a a Bayesian method, the parameter posterior given a single observation \\( v \\) is:
 
 $$ \small
-    p(\theta|v) \propto p(v|\theta)p(\theta)=\sum_h p(v,h|\theta)p(\theta)
+
+    p(\theta \vert v) \propto p(v \vert \theta)p(\theta)=\sum_h p(v,h \vert \theta)p(\theta)
 $$
 
 In Variational Bayes one approximates by factorization:
 
 $$ \small
-    p(h,\theta|v) \approx q(h)q(\theta)
+
+    p(h,\theta \vert v) \approx q(h)q(\theta)
 $$
 
 The factors \\( q(h) \\), \\( q(\theta) \\) are found by minimizing the KL divergence between \\( p(h,\theta|v) \\) and \\( q(h)q(\theta) \\):
 
 $$ \small
+
     KL = -<\log q(h)>_{q(h)}+<\log q(\theta)>_{q(\theta)}-<\log p(h,\theta|v)>_{q(h)q(\theta)} \geq 0
 $$
 
 this gives the bound:
 
 $$ \small
+
     \log p(v) \geq -<\log q(h)>_{q(h)}-<\log q(\theta)>_{q(\theta)}+<\log p(v,h,\theta)>_{q(h)q(\theta)}
 $$
 
 with the E-step
 
 $$ \small
-    q^{new}(h) = \underset{q(h)}{\operatorname{argmin}}  KL (q(h)q^{old}(\theta)|p(h,\theta|v))
+
+    q^{new}(h) = \underset{q(h)}{\operatorname{argmin}}  KL (q(h)q^{old}(\theta) \vert p(h,\theta \vert v))
 $$
 
 and the M-step
 
 $$ \small
-    q^{new}(\theta) = \underset{q(\theta)}{\operatorname{argmin}}  KL (q^{new}(h)q(\theta)|p(h,\theta|v))
+
+    q^{new}(\theta) = \underset{q(\theta)}{\operatorname{argmin}}  KL (q^{new}(h)q(\theta) \vert p(h,\theta \vert v))
 $$
 
 One can find that 
 
 $$ \small
 
-q^{new}(h) \propto \exp <\log p(v,h|\theta)>_{q(\theta)}
+    q^{new}(h) \propto \exp <\log p(v,h \vert \theta)>_{q(\theta)}
 
 $$
 
@@ -189,7 +214,7 @@ and
 
 $$ \small
 
-q^{new}(\theta) \propto p(\theta)\exp<\log p(v,h|\theta)>_{q(h)}
+    q^{new}(\theta) \propto p(\theta)\exp<\log p(v,h \vert \theta)>_{q(h)}
 
 $$
 

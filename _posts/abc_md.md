@@ -1,35 +1,40 @@
-Similarly to the fact that the whole Quantum Field Theory is practically based on Fourier analysis, owning this to the Harmonic Oscillator is the only simple model that can be solved in this context analytically, the most widely used model in multivarite statistics is the Gaussian. Its mathematical properties include well-definedness in arbitrary dimensions and relative simplicity, with a good descriptive power for empirical data, which originates from the Central Limit Theorem.
+---
+layout: post
+title:  "ABC"
+categories: [ General, model evaluation ]
+author: ghost
+image: assets/images/2.jpeg
+---
 
-The multivariate Gaussian is defined as:
 
-$$ \mathcal{N}(\textbf{x}|\boldsymbol{\mu}, \boldsymbol{\Sigma}) = \frac{1}{\sqrt{\det (2\pi) \boldsymbol{\Sigma}}}e^{-\frac{1}{2}(\textbf{x}-\boldsymbol{\mu})^T\boldsymbol{\Sigma}^{-1}(\textbf{x}-\boldsymbol{\mu})} $$
+Statistical Decision Theory is the "Schroedinger Equation" of classification answers questions. 
 
-with the precision matrix \( \boldsymbol{\Sigma}^{-1} \) .
+*What does the best conceivable classifier look like? - Bayes classifier*. 
 
-Maximum Likelihood training (i.i.d.)
-Optimal \( \boldsymbol{\mu} \) :
+*How good is this classifier - Bayes risk*. 
 
-$$ \nabla_{\boldsymbol{\mu}}L(\boldsymbol{\mu},\boldsymbol{\Sigma}) = 0 $$
+Define the **Loss function** \\( L(y,\hat{y}) \\) where \\( y \\) is the true and \\( \hat{y} \\) predicted class, e.g. symmetric/asymmetric *0-1-loss*. Aim of classification is to minimize the expected loss="risk"  \\( R \\) of classifier \\( f \\):
 
-\( \boldsymbol{\mu}^* \) is the sample mean.
+$$
+    \small R(f) := \mathbb{E}_x\mathbb{E}_yL(y,f(x)) = \int_x\mathbb{E}_yL(y,f(x))p(x)dx = \sum_{y\in Y}\sum_{z\in Y}L(y,z)I[f(x)=z]p(y|x)
+$$
 
-Optimal \( \boldsymbol{\Sigma} \) : is the sample covariance.
+where \\( \mathbb{E} \\) is taken w.r.t. true distributions. For symmetric *0-1-loss*, i.e. loss of 1 for wrong predictions, one has:
 
-Bayesian training (i.i.d., univariate)
-For the Bayesian training we need the posterior, conjugate prior and Likelihood. The Likelihood \( \mathcal{N} (\mathcal{X} \vert mu,\sigma^2) \) is a Gaussian. The posterior is:
+$$
+    \small  \mathbb{E}_y L(y,f(x)) = \sum_{y\in Y /f(x)} 1 \cdot p(y|x) = 1-p(f(x)|x)
+$$
 
-$$ p(\mu,\sigma^2|\mathcal{X}) \propto p(\mathcal{X}|\mu,\sigma^2)p(\mu,\sigma^2)=p(\mathcal{X}|\mu, \sigma^2)p(\mu|\sigma^2)p(\sigma^2) $$
+since 
 
-The conjugate prior is:
+$$
+    \small  \sum_{y \in Y}p(y|x) = 1
+$$
 
-$$ p(\mu|\sigma^2)p(\sigma^2) $$
+with \\( y \in Y / f(x) \\) is \\( y \\) except for the predicted class and \\( p(y \vert x) \\) is the true posterior which one does not have straightfowardly. One can interpret the result as: the posterior probability of predicted class must be large to minimize the expected risk, i.e. MAP. For 0-1-loss function the ideal classifier is therefore:
 
-The convenient choice for the prior on the mean \( p(\mu \vert \sigma^2) \) is that it is a Gaussian centered around a \( \mu_0 \):
+$$
+    \small  f(x) = \underset{z \in Y}{\operatorname{argmax}} p(z|x)
+$$
 
-$$ p(\mu \vert \sigma^2) = p(\mu|\mu_0,\sigma_0^2) = \mathcal{N}(\mu \vert \mu_0,\sigma_0^2) $$
-
-The posterior is correspondingly:
-
-$$ p(\mu,\sigma^2 \vert \mathcal{X}) \propto \mathcal{N}(\mathcal{X} \vert \mu,\sigma^2)\mathcal{N}(\mu \vert \mu_0,\sigma_0^2)p(\sigma^2) $$
-
-With the constraint \( \sigma_0^2 = \text{const.}\cdot\sigma^2 \) one finds for the \( p(\sigma^2) \) part of the prior, that the Inverse-Gamma distribution is conjugate. Therefore the whole prior should take the Gauss-Inverse-Gamma form and has a Gauss-Inverse-Gamma conjugate posterior.
+i.e. Bayes classifier. The actual quality of the classification however largely depend on the data overlap in the feature space.

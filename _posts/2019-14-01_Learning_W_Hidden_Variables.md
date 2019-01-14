@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Intermediate: Learning with Hidden Variables"
-categories: [ General, model evaluation ]
+categories: [ Graphical models ]
 author: ghost
 featured: true
 image: assets/images/4.jpeg

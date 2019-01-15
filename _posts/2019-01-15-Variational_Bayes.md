@@ -20,7 +20,7 @@ $$ \small
     p(h,\theta \vert v) \approx q(h)q(\theta)
 $$
 
-The factors \\( q(h) \\), \\( q(\theta) \\) are found by minimizing the KL divergence between \\( p(h,\theta|v) \\) and \\( q(h)q(\theta) \\):
+The factors \\( q(h) \\), \\( q(\theta) \\) are found by minimizing the KL divergence between \\( p(h,\theta \vert v) \\) and \\( q(h)q(\theta) \\):
 
 $$ \small
 

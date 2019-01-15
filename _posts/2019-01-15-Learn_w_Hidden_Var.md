@@ -7,7 +7,7 @@ featured: true
 image: assets/images/4.jpeg
 ---
 
-New components of a model are hidden/latent variables \\( x_h \)), i.e. parameters which are essential for the model but potentially cannot be observed due and missing variables which typically miss at random due to imperfection of data and are simply modelled by an index function \\( \textbf{I}_m \\). 
+New components of a model are hidden/latent variables \\( x_h \\) , i.e. parameters which are essential for the model but potentially cannot be observed due and missing variables which typically miss at random due to imperfection of data and are simply modelled by an index function \\( \textbf{I}_m \\). 
 
 In general the probability of a special outcome of \\( x_v,\textbf{I}_m\\) will be:
 
@@ -44,53 +44,53 @@ In MCAR case the model is completely unbiased. MCAR is almost never the case.
 
 Hidden variables prevent decoupling of marginals. The theoretical discussion in this chapter shows how EM is aimed on replacing the objective function by the lower bound where the coupling is removed.
 
-Consider a single visible variable \\( v \\) and a single hidden variable \\( h \\). One wishes to set \\( \theta \\) for the model \\( \p(v,h \vert \theta) \) by maximizing the marginal likelihood \\( p(v \vert \theta) \). The Kullback-Leibler divergence between a 'variational' distribution \\( q(h \vert v) \\) and the model is:
+Consider a single visible variable \\( v \\) and a single hidden variable \\( h \\). One wishes to set \\( \theta \\) for the model \\( \p(v,h \vert \theta) \\) by maximizing the marginal likelihood \\( p(v \vert \theta) \). The Kullback-Leibler divergence between a 'variational' distribution \\( q(h \vert v) \\) and the model is:
 
 $$ \small
 
-    KL(q(h \vert v)|p(h \vert v,\theta)) = <\log q(h \vert v) - \log p(h \vert v,\theta)>_{q(h \vert v)} \geq 0 \addtag \addtag
+    KL(q(h \vert v)|p(h \vert v,\theta)) = <\log q(h \vert v) - \log p(h \vert v,\theta)>_{q(h \vert v)} \geq 0
 $$
 
 With the use of:
 
 $$ \small
 
-    p(h \vert v,\theta) = \frac{p(h,v \vert \theta)}{p(v \vert \theta)} \addtag
+    p(h \vert v,\theta) = \frac{p(h,v \vert \theta)}{p(v \vert \theta)}
 $$
 
 one can rewrite:
 
 $$ \small
 
-    KL(q(h \vert v)|p(h \vert v,\theta)) = <\log q(h \vert v)>_{q(h \vert v)} - <\log p(h,v \vert \theta)>_{q(h \vert v)}+\log p(v \vert \theta) \geq 0  \addtag
+    KL(q(h \vert v)|p(h \vert v,\theta)) = <\log q(h \vert v)>_{q(h \vert v)} - <\log p(h,v \vert \theta)>_{q(h \vert v)}+\log p(v \vert \theta) \geq 0  
 $$
 
 This gives a lower bound on the marginal likelihood for a single training example:
 
 $$ \small
 
-    \log p(v \vert \theta) \geq -<\log q(h \vert v)>_{q(h \vert v)}+<\log p(h,v \vert \theta)>_{q(h \vert v)} = \text{Entropy} + \text{Energy} \addtag
+    \log p(v \vert \theta) \geq -<\log q(h \vert v)>_{q(h \vert v)}+<\log p(h,v \vert \theta)>_{q(h \vert v)} = \text{Entropy} + \text{Energy} 
 $$
 
 The energy term is also called the 'expected complete data log likelihood'. Having more than one data point, i.i.d. data \\( \mathcal{V} \\), the full log likelihood is:
 
 $$ \small
 
-    \log p(\mathcal{V} \vert \theta) = \sum_{n=1}^N \log p(v^n \vert \theta)  \addtag
+    \log p(\mathcal{V} \vert \theta) = \sum_{n=1}^N \log p(v^n \vert \theta)  
 $$
 
 And the lower bound is:
 
 $$ \small
 
-    -\sum^N_{n=1}<\log q(h^n \vert v^n)>_{q(h^n \vert v^n)}+\sum^^N_{n=!}<\log p(h^n,v^n \vert \theta)>_{q(h^n \vert v^n)} := B(\mathcal{Q},\theta) \addtag
+    -\sum^N_{n=1}<\log q(h^n \vert v^n)>_{q(h^n \vert v^n)}+\sum^N_{n=!} < \log p(h^n,v^n \vert \theta) >_{q(h^n \vert v^n)} := B(\mathcal{Q},\theta) 
 $$
 
 where \\( \mathcal{Q} \\) is a set of variational distributions and the bound is again the sum of an energy term and an entropy term. The optimization of the lower bound is done via first optimizing the equation w.r.t. \\( \mathcal{Q} \\) keeping \\( \theta \\) constant \textbf{(E-step)} and then w.r.t. \\( \theta \\) keeping \\( \mathcal{Q} \\) constant **(M-step)**. The two steps are repeated until convergence. Since during the E-step \\( q \\) is fixed, it only maximizes the energy term (called classical EM). The steps are repeated until convergence. The fully optimal setting is:
 
 $$ \small
 
-    q(h^n \vert v^n) = p(h^n \vert v^n,\theta) \implies \log p(\mathcal{V} \vert \theta) = B(\mathcal{Q},\theta) \addtag
+    q(h^n \vert v^n) = p(h^n \vert v^n,\theta) \implies \log p(\mathcal{V} \vert \theta) = B(\mathcal{Q},\theta) 
 $$
 
 Due to the local optimization the global maximum can not always be reached. By design of EM the lower bound is never decreased. A positive side effect is that the log likelihood is optimized too, i.e. is higher with the updated \\( \theta \\).

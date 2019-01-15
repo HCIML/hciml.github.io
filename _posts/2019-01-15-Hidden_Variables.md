@@ -3,7 +3,6 @@ layout: post
 title:  "Basic: Hidden Variables"
 categories: [ Graphical models ]
 author: ghost
-featured: true
 image: assets/images/4.jpeg
 ---
 

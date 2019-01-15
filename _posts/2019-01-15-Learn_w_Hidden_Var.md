@@ -4,7 +4,7 @@ title:  "Intermediate: Learning with Hidden Variables"
 categories: [ Graphical models ]
 author: ghost
 featured: true
-image: assets/images/4.jpeg
+image: assets/images/5.jpeg
 ---
 
 Hidden variables prevent decoupling of marginals. The theoretical discussion in this chapter shows how variational Expectation Maximization is aimed on replacing the objective function by the lower bound where the coupling is removed.

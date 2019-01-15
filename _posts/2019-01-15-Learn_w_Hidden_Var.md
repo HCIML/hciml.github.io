@@ -44,7 +44,7 @@ In MCAR case the model is completely unbiased. MCAR is almost never the case.
 
 Hidden variables prevent decoupling of marginals. The theoretical discussion in this chapter shows how EM is aimed on replacing the objective function by the lower bound where the coupling is removed.
 
-Consider a single visible variable \\( v \\) and a single hidden variable \\( h \\). One wishes to set \\( \theta \\) for the model \\( \p(v,h \vert \theta) \\) by maximizing the marginal likelihood \\( p(v \vert \theta) \). The Kullback-Leibler divergence between a 'variational' distribution \\( q(h \vert v) \\) and the model is:
+Consider a single visible variable \\( v \\) and a single hidden variable \\( h \\). One wishes to set \\( \theta \\) for the model \\( p(v,h \vert \theta) \\) by maximizing the marginal likelihood \\( p(v \vert \theta) \\). The Kullback-Leibler divergence between a 'variational' distribution \\( q(h \vert v) \\) and the model is:
 
 $$ \small
 

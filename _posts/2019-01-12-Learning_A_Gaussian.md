@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Basic: Learning A Gaussian"
+title:  "Basic: Learning a Gaussian"
 categories: [ General, model evaluation ]
 author: ghost
 image: assets/images/3.jpg

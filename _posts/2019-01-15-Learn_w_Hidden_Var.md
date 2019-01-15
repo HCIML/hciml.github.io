@@ -118,7 +118,7 @@ $$ \small
     q_t^n(x) := q_t(h^n \vert v^n)\delta (v,v^n)
 $$
 
-and defining a \textbf{mixture distribution}:
+and defining a **mixture distribution**:
 
 $$ \small
 

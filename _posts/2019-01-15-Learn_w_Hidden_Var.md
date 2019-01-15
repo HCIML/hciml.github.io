@@ -86,7 +86,7 @@ $$ \small
     -\sum^N_{n=1}<\log q(h^n \vert v^n)>_{q(h^n \vert v^n)}+\sum^N_{n=!} < \log p(h^n,v^n \vert \theta) >_{q(h^n \vert v^n)} := B(\mathcal{Q},\theta) 
 $$
 
-where \\( \mathcal{Q} \\) is a set of variational distributions and the bound is again the sum of an energy term and an entropy term. The optimization of the lower bound is done via first optimizing the equation w.r.t. \\( \mathcal{Q} \\) keeping \\( \theta \\) constant \textbf{(E-step)} and then w.r.t. \\( \theta \\) keeping \\( \mathcal{Q} \\) constant **(M-step)**. The two steps are repeated until convergence. Since during the E-step \\( q \\) is fixed, it only maximizes the energy term (called classical EM). The steps are repeated until convergence. The fully optimal setting is:
+where \\( \mathcal{Q} \\) is a set of variational distributions and the bound is again the sum of an energy term and an entropy term. The optimization of the lower bound is done via first optimizing the equation w.r.t. \\( \mathcal{Q} \\) keeping \\( \theta \\) constant **(E-step)** and then w.r.t. \\( \theta \\) keeping \\( \mathcal{Q} \\) constant **(M-step)**. The two steps are repeated until convergence. Since during the E-step \\( q \\) is fixed, it only maximizes the energy term (called classical EM). The steps are repeated until convergence. The fully optimal setting is:
 
 $$ \small
 

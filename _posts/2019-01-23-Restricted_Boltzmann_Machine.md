@@ -9,7 +9,7 @@ image: assets/images/7.jpg
 A Boltzmann machine is a MN, a particular log-linear MRF (energy function is linear in its free parameters), on binary variables with the probability distribution of the form \\( p(x) = \frac{1}{Z}e^{-E(v,h)} \\):
 
 $$  \small
-    p(x) = \frac{1}{Z}(\textbf{w},b)e^{\sum_{i<j}w_{ij}x_ix_j+\sum_ib_ix_i} \addtag
+    p(x) = \frac{1}{Z}(\textbf{w},b)e^{\sum_{i<j}w_{ij}x_ix_j+\sum_ib_ix_i}
 $$
 
 with the interactions \\( w_{ij} \\) (weights) and the biases \\( b_i \\). The graphical model of the Boltzmann machine is an undirected graph with a link between nodes i and j for \\( w_{ij} \neq 0 \\). Consequently, for all but specially constrained W, the graph is multiply-connected and inference will be typically intractable. These are called **Restricted Boltzmann Machines**. 
@@ -27,7 +27,7 @@ $$
 $$
 
 with \\( a \\) being the biases for the hidden units.
-Training is done via **back-propagation**, i.e. the parameters \\( (b$, $w) \\) are trained in unsupervised manner by comparing the reconstruction, starting with the output neural activations and going backwards in the parametric model, with the initial signal and adjusting the parameters when the \textit{Kullback-Leibler Divergence} between both is large.
+Training is done via **back-propagation**, i.e. the parameters \\( (b, w) \\) are trained in unsupervised manner by comparing the reconstruction, starting with the output neural activations and going backwards in the parametric model, with the initial signal and adjusting the parameters when the **Kullback-Leibler Divergence** between both is large.
 
 The free energy is:
 
@@ -76,7 +76,7 @@ $$
 $$
 
 ## Sampling
-RBM uses block Gibbs sampling where $h$ and $v$ are sampled given each other fixed:
+RBM uses block Gibbs sampling where \\( h \\) and \\( v \\) are sampled given each other fixed:
 
 $$
     h^{(n+1)}\sim sign (W^Tv^{(n)}+c)

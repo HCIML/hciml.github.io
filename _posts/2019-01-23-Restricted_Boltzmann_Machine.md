@@ -8,7 +8,7 @@ image: assets/images/7.jpg
 
 A Boltzmann machine is a MN, a particular log-linear MRF (energy function is linear in its free parameters), on binary variables with the probability distribution of the form \\( p(x) = \frac{1}{Z}e^{-E(v,h)} \\):
 
-$$  \small
+$$  
     p(x) = \frac{1}{Z}(\textbf{w},b)e^{\sum_{i<j}w_{ij}x_ix_j+\sum_ib_ix_i}
 $$
 
@@ -16,7 +16,7 @@ with the interactions \\( w_{ij} \\) (weights) and the biases \\( b_i \\). The g
 
 The simplest RBM is a bipartite graph with shared weights, i.e. two layers, a visible first layer i and a hidden second layer j. In that case the energy function is:
 
-$$  \small
+$$ 
     E(v,h) = -\sum_ia_iv_i-\sum_jb_jh_j-\sum_i\sum_jv_iw_{ij}h_j
 $$
 

@@ -6,7 +6,7 @@ comments: true
 
 This website emerged from my idea to boil down simple topics in Machine Learning to articles which can be portably read accompanying a good cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the day's choice in the spirit of Swedish *fika* tradition. 
 
-To achieve this I outsourced the mathematical proofs and elementary concepts to be looked up in the respective literature. Basic mathematical understanding is a prerequisite. At this point I would also like to mention my teaching scripts which can be found in the section *Resources*.
+To achieve this I outsourced the mathematical proofs and elementary concepts to be looked up in the respective literature. Basic mathematical understanding is a prerequisite. At this point I would also like to mention my teaching scripts which can be found in the section Resources.
 
 What counted more for me in the design of the articles is the connection of concepts, which I consider as the main drive of creative thinking. I hope it facilitates grasping the whole picture in a reasonable amount of time as well as coming up with new ideas. 
 

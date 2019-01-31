@@ -3,6 +3,7 @@ layout: post
 title:  "Intermediate: Variational Bayes"
 categories: [ Graphical models ]
 author: ghost
+published: false
 image: assets/images/6.jpeg
 ---
 

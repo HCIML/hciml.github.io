@@ -4,7 +4,7 @@ title: For the interested reader (status: in preparation)
 comments: true
 ---
 
-This website emerged from my idea to boil down simple topics in Machine Learning to an article which can be portably read accompanying a good cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the day's choice in the spirit of the Swedish *fika* tradition. 
+This website emerged from my idea to boil down simple topics in Machine Learning to articles which can be portably read accompanying a good cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the day's choice in the spirit of the Swedish *fika* tradition. 
 
 To achieve this I outsourced the mathematical proofs and elementary concepts to be looked up in the respective literature. Basic mathematical understanding is a prerequisite. At this point I would also like to point to my teaching scripts.
 

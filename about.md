@@ -8,7 +8,7 @@ This website is the result of my idea to boil down simple topics in Machine Lear
 
 To achieve this I outsourced the mathematical proofs and elementary concepts to be looked up in the respective literature. Basic mathematical understanding is a prerequisite. At this point I would like to encourage you to make use of my scripts which can be found in the section Resources. In the design of the articles it was important for me to highlight the connections of concepts, which I consider the main drive of creative thinking. I hope this structure facilitates gradual illumination of the whole picture in a reasonable amount of time as well as provides an enablement to come up with new ideas. 
 
-The articles are divided into three difficulty levels, based on some arbitrary criteria: basic, intermediate and advanced. The difficulty category is also a hint on the order in which the articles can be consumed. 
+The articles are divided into three difficulty levels, based on some arbitrary criteria: basic, intermediate and advanced. The difficulty category is also a hint, not necessity, on the order in which the articles can be consumed. 
 
 Welcome, *välkommen* and enjoy! 
 

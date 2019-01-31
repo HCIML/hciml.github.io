@@ -8,7 +8,7 @@ This website emerged from my idea to boil down simple topics in Machine Learning
 
 To achieve this I outsourced the mathematical proofs and elementary concepts to be looked up in the respective literature. Basic mathematical understanding is a prerequisite. At this point I would also like to point to my teaching scripts.
 
-What counted more for me in the design of the articles is the connection of concepts, which, for me, is the main drive of creative thinking. I hope it facilitates grasping the whole picture in a reasonable amount of time as well as coming up with new ideas. 
+What counted more for me in the design of the articles is the connection of concepts, which I consider as the main drive of creative thinking. I hope it facilitates grasping the whole picture in a reasonable amount of time as well as coming up with new ideas. 
 
 The articles are divided into three difficulty levels, based on some arbitrary criteria: basic, intermediate and advanced. The difficulty category is also a hint on the order in which the articles can be consumed. 
 

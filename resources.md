@@ -1,7 +1,5 @@
 
-## Resources
-
-Welcome to my resources which I uploaded for teaching purposes. In the following you will find some of my scripts authored at the Institute for Scientific Computing, University of Heidelberg. 
+Welcome to the resources page. In the following you will find some of my scripts authored at the Institute for Scientific Computing, University of Heidelberg. 
 
 ### Artificial Intelligence
 

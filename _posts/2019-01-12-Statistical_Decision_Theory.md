@@ -37,4 +37,4 @@ $$
     \small  f(x) = \underset{z \in Y}{\operatorname{argmax}} p(z|x)
 $$
 
-i.e. Bayes classifier. The actual quality of the classification however largely depend on the data overlap in the feature space.
+i.e. Bayes classifier. The actual quality of the classification however largely depends on the data overlap in the feature space.

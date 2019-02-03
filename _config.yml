@@ -1,6 +1,6 @@
 # Site
-name: "SC Resources"
-description: "Blog - featuring articles on topics in Physics and Machine Learning"
+name: "ML Resources"
+description: "Featuring articles on topics in Physics and Machine Learning"
 meta_description: "Blog on topics in AI"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'

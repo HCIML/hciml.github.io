@@ -8,6 +8,39 @@ published: true
 image: assets/images/5.jpeg
 ---
 
+New components of a model are hidden/latent variables \\( x_h \\) , i.e. parameters which are essential for the model but potentially cannot be observed due and missing variables which typically miss at random due to imperfection of data and are simply modelled by an index function \\( \textbf{I}_m \\). 
+
+In general the probability of a special outcome of \\( x_v,\textbf{I}_m\\) will be:
+
+$$ \small
+
+    p(x_v,\textbf{I}_m \vert \theta) = \sum_{x_i}p(x_v,x_i,\textbf{I}_m \vert \theta) =  \sum_{x_i}p(\textbf{I}_m \vert x_v,x_h,\theta)p(x_v,x_i \vert \theta)
+$$
+
+One can further assume that the generation process for missing variables only depends on visible variables which is called **missing at random (MAR)**:
+
+$$ \small
+
+    p(\textbf{I}_m \vert x_v,x_h,\theta) = p(\textbf{I}_m \vert x_v)
+$$
+
+With that the probability of the observables of the model is:
+
+$$ \small
+
+    p(x_v,\textbf{I}_m \vert \theta) = p(\textbf{I}_m \vert x_v)p(x_v \vert \theta)
+$$
+
+and the parameters can be accessed from the marginal likelihood. MAR is an assumption that cannot be verified statistically.
+The **missing completely at random assumption (MCAR)** requires that the generation process of missing variables is completely independent of the model entities:
+
+$$ \small
+
+    p(\textbf{I}_m \vert x_v,x_h,\theta) = p(\textbf{I}_m)
+$$
+
+In MCAR case the model is completely unbiased. MCAR is almost never the case.
+
 Hidden variables prevent decoupling of marginals. The theoretical discussion in this chapter shows how variational Expectation Maximization is aimed on replacing the objective function by the lower bound where the coupling is removed.
 
 Consider a single visible variable \\( v \\) and a single hidden variable \\( h \\). One wishes to set \\( \theta \\) for the model \\( p(v,h \vert \theta) \\) by maximizing the marginal likelihood \\( p(v \vert \theta) \\). The Kullback-Leibler divergence between a 'variational' distribution \\( q(h \vert v) \\) and the model is:

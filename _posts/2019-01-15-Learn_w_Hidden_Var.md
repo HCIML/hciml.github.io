@@ -4,7 +4,7 @@ title:  "Intermediate: Variational Expectation Maximization"
 categories: [ Graphical models ]
 author: ghost
 featured: true
-published: false
+published: true
 image: assets/images/5.jpeg
 ---
 

@@ -7,7 +7,7 @@ published: true
 image: assets/images/6.jpeg
 ---
 
-The generalization of EM is Variational Bayes. Since it a a Bayesian method, the parameter posterior given a single observation \\( v \\) is:
+The generalization of EM (see the previous post: Modelling with Hidden Variables) is Variational Bayes. Since it a a Bayesian method, the parameter posterior given a single observation \\( v \\) is:
 
 $$ \small
 

@@ -8,7 +8,7 @@ published: true
 image: assets/images/5.jpeg
 ---
 
-New components of a general or graphical model are hidden/latent variables \\( x_h \\) , i.e. parameters which are essential for the model but potentially cannot be observed due and missing variables which typically miss at random due to imperfection of data and are simply modelled by an index function \\( \textbf{I}_m \\). 
+Hidden or latent variables \\( x_h \\) , are parameters which are essential for the model but potentially cannot be observed due and missing variables which typically miss at random due to imperfection of data and are simply modelled by an index function \\( \textbf{I}_m \\). 
 
 In general the probability of a special outcome of \\( x_v,\textbf{I}_m\\) will be:
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Intermediate: Hidden Variables"
+title:  "Intermediate: Modelling with Hidden Variables"
 categories: [ Graphical models ]
 author: ghost
 featured: false

@@ -3,7 +3,7 @@ layout: post
 title:  "Intermediate: Restricted Boltzmann Machine"
 categories: [ neural models ]
 author: ghost
-published: false
+published: true
 image: assets/images/7.jpg
 ---
 

@@ -7,7 +7,7 @@ published: false
 image: assets/images/7.jpg
 ---
 
-A Boltzmann machine is a MN, a particular log-linear MRF (energy function is linear in its free parameters), on binary variables with the probability distribution of the form \\( p(x) = \frac{1}{Z}e^{-E(v,h)} \\):
+Boltzmann machine is a MN, a particular log-linear MRF (energy function is linear in its free parameters), on binary variables with the probability distribution of the form \\( p(x) = \frac{1}{Z}e^{-E(v,h)} \\):
 
 $$  
     p(x) = \frac{1}{Z}(\textbf{w},b)e^{\sum_{i<j}w_{ij}x_ix_j+\sum_ib_ix_i}

@@ -2,7 +2,7 @@
 layout: post
 title:  "Basic: Bayesian Model Selection"
 categories: [ General, model evaluation ]
-author: ghost
+author: Kiryl
 featured: true
 image: assets/images/1.jpeg
 ---

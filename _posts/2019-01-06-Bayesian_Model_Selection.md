@@ -70,28 +70,4 @@ BIC is closely related to the **Akaike Information Criterion (AIC)** which is:
 
 $$ \small AIC = 2K-2\log p(\mathcal{D}|\boldsymbol{\theta}^*,M) $$
 
-{% if page.comments %} 
 
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = https://physresources.github.io/general/model%20evaluation/2019/01/06/Bayesian_Model_Selection.html;  
-// Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = Bayesian_Model_Selection; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://https-physresources-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-{% endif %}

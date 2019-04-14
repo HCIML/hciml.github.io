@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Basic: Bayesian Model Selection"
 categories: [ General, model evaluation ]
 author: ghost

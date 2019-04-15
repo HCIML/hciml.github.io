@@ -86,7 +86,10 @@ this.page.identifier = '{{content_id}}'; // Replace PAGE_IDENTIFIER with your pa
 
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
-s.src = 'https://https-physresources-github-io.disqus.com/embed.js';
+s.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+
+/**'https://https-physresources-github-io.disqus.com/embed.js'; */
+
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();

@@ -79,11 +79,6 @@ $$ \small AIC = 2K-2\log p(\mathcal{D}|\boldsymbol{\theta}^*,M) $$
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-
-/** this.page.url = '{{content.absolute_url}}'; 
-
-this.page.url = 'https://github.com/PhysResources/physresources.github.io/edit/master/_posts/2019-01-06-Bayesian_Model_Selection.md'; */
-
 this.page.url = 'https://physresources.github.io/general/model%20evaluation/2019/01/06/Bayesian_Model_Selection.html';
 // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = '{{content_id}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
@@ -92,8 +87,6 @@ this.page.identifier = '{{content_id}}'; // Replace PAGE_IDENTIFIER with your pa
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 s.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
-
-/**'https://https-physresources-github-io.disqus.com/embed.js'; */
 
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);

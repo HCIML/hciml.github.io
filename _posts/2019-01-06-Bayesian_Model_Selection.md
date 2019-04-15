@@ -72,7 +72,7 @@ $$ \small AIC = 2K-2\log p(\mathcal{D}|\boldsymbol{\theta}^*,M) $$
 
 {% if page.comments != false %}
 <div id="disqus_thread"></div>
-<script data-cfasync="false" type="text/javascript></script>
+
 <script>
 
 /**
@@ -93,5 +93,6 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
+<script data-cfasync="false" type="text/javascript></script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}

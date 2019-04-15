@@ -79,7 +79,10 @@ $$ \small AIC = 2K-2\log p(\mathcal{D}|\boldsymbol{\theta}^*,M) $$
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = '{{content.absolute_url}}';
+
+/** this.page.url = '{{content.absolute_url}}'; */
+
+this.page.url = 'https://github.com/PhysResources/physresources.github.io/edit/master/_posts/2019-01-06-Bayesian_Model_Selection.md';
 // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = '{{content_id}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };

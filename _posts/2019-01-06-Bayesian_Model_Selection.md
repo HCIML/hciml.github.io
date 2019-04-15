@@ -72,6 +72,7 @@ $$ \small AIC = 2K-2\log p(\mathcal{D}|\boldsymbol{\theta}^*,M) $$
 
 {% if page.comments != false %}
 <div id="disqus_thread"></div>
+<script data-cfasync="false" type="text/javascript></script>
 <script>
 
 /**

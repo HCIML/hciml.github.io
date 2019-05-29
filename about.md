@@ -8,9 +8,9 @@ This personal website sets an informative goal, resulting from the idea to boil 
 
 To afford this I outsourced all the basic mathematical proofs and elementary concepts to be looked up in the respective literature. Therefore some mathematical understanding is a prerequisite, since the articles address Data Scientists and Physicists on common terms :) I would like to encourage you to also make use of my scripts that can be found in the section *Resources*. 
 
-Therefore, in the design of the articles it was important to me to highlight the connections of concepts to provoke creative thinking. I hope this structure can facilitate the gradual illumination of the topics in a reasonable amount of time and even provide enablement to come up with new ideas. 
+Therefore, in the design of the articles it was important to me to highlight the connections of concepts to provoke creative thinking. I hope this structure can facilitate the gradual illumination of the topics in a reasonable amount of time and provide enablement to come up with new ideas. 
 
-Furthermore, the articles are divided into three difficulty levels, based on some arbitrary criteria: basic, intermediate and advanced. The difficulty category is also a hint on the order in which the articles can be consumed for the speed up of the learning curve. 
+Furthermore, the articles are divided into three difficulty levels, based on some arbitrary criteria: basic, intermediate and advanced. The difficulty category is a hint on the order in which the articles can be consumed for the possible speed up of the learning curve. 
 
 Welcome, *välkommen* and enjoy! 
 

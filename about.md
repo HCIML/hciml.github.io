@@ -4,7 +4,7 @@ title: For the interested reader (status: in preparation)
 comments: true
 ---
 
-This personal website sets an informative goal, resulting from the idea to boil down simple topics in Machine Learning to articles that can be portably read accompanying a good cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the day's choice in the spirit of Swedish *fika* tradition. The overall goal is to post a number of articles on topics in Data Science and Physics to reflect my vigorous interest in these areas. In fact, I will attempt to connect this two fascinating areas wherever possible and highlight the parallels in the long-run. 
+This personal website sets an informative goal, resulting from the idea to boil down simple topics in Machine Learning to articles that can be portably read accompanying a good cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the day's choice in the spirit of Swedish *fika* tradition. The overall goal is to post a number of articles on topics in Data Science and Physics to reflect my vigorous interest in these areas. In fact, I will attempt to connect this two fascinating areas wherever possible and highlight the parallels in the long run. 
 
 To afford this I outsourced all the basic mathematical proofs and elementary concepts to be looked up in the respective literature. Therefore some mathematical understanding is a prerequisite, since the articles address Data Scientists and Physicists on common terms :) I would like to encourage you to also make use of my scripts that can be found in the section *Resources*. 
 

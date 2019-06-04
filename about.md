@@ -4,9 +4,9 @@ title: For the interested reader (status: in preparation)
 comments: true
 ---
 
-This personal website sets an informative goal by means of boiling down simple topics in Machine Learning to articles that can be portably read accompanying a good cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the day's choice in the spirit of Swedish *fika* tradition. My overall goal is to post a number of articles on topics in Data Science and Physics to reflect my vigorous interest in these areas. In fact, I will attempt to connect this two fascinating areas wherever possible and highlight the parallels in the long run. 
+This personal website sets an informative goal by means of boiling down simple topics in Machine Learning to articles that can be portably read accompanying a good cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the *fika* choice of the day! 
 
-To afford this I outsourced all the basic mathematical proofs and elementary concepts to be looked up in the respective literature. Some mathematical understanding is a prerequisite, since the articles address Data Scientists and Physicists on common terms :) I would also like to encourage you to make use of my scripts that can be found in the section *Resources* and are work in progress. 
+With the goal to post a number of articles on topics in Data Science and Physics I utilize my vigorous interest in these areas. In fact, I will attempt to connect this two fascinating areas wherever possible and highlight the parallels in the long run. To afford this I outsourced all the basic mathematical proofs and elementary concepts to be looked up in the respective literature. Some mathematical understanding is a prerequisite, since the articles address Data Scientists and Physicists on common terms :) I would also like to encourage you to make use of my scripts that can be found in the section *Resources* and are work in progress. 
 
 Therefore, in the design of the articles it was important to me to highlight the connections of concepts to provoke creative thinking. I hope this structure can facilitate the gradual illumination of the topics in a reasonable amount of time and provide enablement to come up with new ideas. 
 

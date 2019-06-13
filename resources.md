@@ -15,4 +15,4 @@ Welcome to the resources section. In the following you will find some of my scri
 ### Quantum Spin Systems
 [Download the script in PDF here -][3] My Master's Thesis on applications of quantum spins for purposes of developing novel environmentally friendly battery materials (in German) , Kirchhoff Institute, Heidelberg.
 
-[2]:{{ https://teachres.github.io }}/download/Thesis.pdf
+[3]:{{ https://teachres.github.io }}/download/Thesis.pdf

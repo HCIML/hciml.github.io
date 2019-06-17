@@ -1,5 +1,5 @@
 
-Welcome to the resources section. In the following you will find some of my scripts initially authored at the Institute for Scientific Computing, University of Heidelberg and partly still work in progress. 
+Welcome to the resources section. In the following you will find some of my scripts initially authored at the Institute for Scientific Computing, University of Heidelberg as supplementary material to my studies. 
 
 ### Artificial Intelligence
 

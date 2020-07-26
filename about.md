@@ -14,7 +14,7 @@ Furthermore, the articles are divided into three difficulty levels, based on som
 
 Welcome, *välkommen* and enjoy! 
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/InAVWxAEJ54/0.jpg)](http://www.youtube.com/watch?v=InAVWxAEJ54 "Requerdos De Alhambra")
+<!--[![IMAGE ALT TEXT](http://img.youtube.com/vi/InAVWxAEJ54/0.jpg)](http://www.youtube.com/watch?v=InAVWxAEJ54 "Requerdos De Alhambra")-->
 
 <!--![jekyll template mediumish]({{site.baseurl}}/assets/images/mediumish-jekyll-template.png){: .shadow}-->
 

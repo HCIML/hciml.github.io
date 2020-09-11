@@ -8,7 +8,7 @@ Welcome to the resources section of my website. In the following you will find s
 [1]:{{ https://teachres.github.io }}/download/Skript_Machine_Learning_Models.pdf
 
 ### Particle Physics
-[Download the script in PDF here -][2] Fundamentals of Quantum Field Theory (in English), Heidelberg Institute for Theoretical Studies, HITS, Heidelberg. 
+[Download the script in PDF here -][2] Fundamentals of Quantum Field Theory (in English), authored at the Heidelberg Institute for Theoretical Studies, HITS, Heidelberg. 
 
 [2]:{{ https://teachres.github.io }}/download/Skript_Quantum_Field_Theory.pdf
 

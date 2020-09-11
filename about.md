@@ -4,11 +4,11 @@ title: For the interested reader (status: in preparation)
 comments: true
 ---
 
-This website sets an informative goal achieved by means of boiling down some topics in Data Science and Physics to articles that can be portably read accompanying a cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the *fika* choice of the day! 
+This website sets an informative goal achieved through boiling down some topics in Data Science and Physics to articles that can be portably read accompanying a cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the *fika* choice of the day!
 
-In fact, it is an attempt to connect this two fascinating research areas and highlight the numerous parallels. To afford this all the basic mathematical proofs and elementary concepts are outsourced to be looked up in the respective literature. Basic mathematical understanding is a prerequisite, since the articles address Data Scientists and Physicists on common terms. I would also like to encourage you to make use of my scripts that can be found in the section *Resources* and are in general work in progress. In the design of the articles it was important to me to highlight the connections of concepts to induce interdisciplinary thinking. I hope that this structure will facilitate the gradual illumination of the topics in a reasonable amount of time and provide enablement to come up with new ideas. 
+It is an attempt to connect these two fascinating research areas and highlight the numerous parallels. To afford this all the basic mathematical proofs and elementary concepts are outsourced to be looked up in the respective literature. Basic mathematical understanding is a prerequisite since the articles address Data Scientists and Physicists on common terms. I would also like to encourage you to make use of my scripts that can be found in the section *Resources* and are in general work in progress. In the design of the articles, it was important to me to highlight the connections of concepts to induce interdisciplinary thinking. I hope that this structure will facilitate the gradual illumination of the topics in a reasonable amount of time and provide enablement to come up with new ideas.
 
-Furthermore, the articles are divided into three difficulty levels, based on some arbitrary criteria: basic, intermediate and advanced. The difficulty category is a hint on the order in which the articles can be consumed for the possible speed up of the learning curve. 
+Furthermore, the articles are divided into three difficulty levels, based on some arbitrary criteria: basic, intermediate, and advanced. The difficulty category is a hint on the order in which the articles can be consumed for the possible speed-up of the learning curve.
 
 Welcome, *välkommen* and enjoy! 
 

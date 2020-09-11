@@ -12,7 +12,7 @@ Welcome to the resources section of my website. In the following you will find s
 
 [2]:{{ https://teachres.github.io }}/download/Skript_Quantum_Field_Theory.pdf
 
-### Quantum Spin Systems
-[Download the script in PDF here -][3] My Master's Thesis on applications of complex quantum spin systems to developing novel environmentally friendly battery materials (in German) , Kirchhoff Institute, Heidelberg.
+<--!### Quantum Spin Systems-->
+<--![Download the script in PDF here -][3] My Master's Thesis on applications of complex quantum spin systems to developing novel environmentally friendly battery materials (in !German) , Kirchhoff Institute, Heidelberg.-->
 
-[3]:{{ https://teachres.github.io }}/download/Thesis.pdf
+<--![3]:{{ https://teachres.github.io }}/download/Thesis.pdf-->

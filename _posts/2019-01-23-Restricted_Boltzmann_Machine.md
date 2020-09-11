@@ -4,6 +4,7 @@ title:  "Intermediate: Restricted Boltzmann Machine"
 categories: [ neural models ]
 author: ghost
 published: true
+featured: true
 image: assets/images/7.jpg
 ---
 

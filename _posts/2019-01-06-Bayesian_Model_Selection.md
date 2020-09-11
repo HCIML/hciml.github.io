@@ -4,7 +4,7 @@ comments: true
 title:  "Basic: Bayesian Model Selection"
 categories: [ General, model evaluation ]
 author: ghost
-featured: true
+featured: false
 image: assets/images/1.jpeg
 ---
 

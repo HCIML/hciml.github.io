@@ -3,7 +3,7 @@ layout: post
 title:  "Intermediate: Modelling with Hidden Variables"
 categories: [ Graphical models ]
 author: ghost
-featured: true
+featured: false
 published: true
 image: assets/images/5.jpeg
 ---

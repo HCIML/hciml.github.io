@@ -4,6 +4,7 @@ title:  "Intermediate: Variational Bayes"
 categories: [ Graphical models ]
 author: ghost
 published: true
+featured: true
 image: assets/images/6.jpeg
 ---
 

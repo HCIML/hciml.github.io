@@ -4,7 +4,7 @@ title: For the interested reader (status: in preparation)
 comments: true
 ---
 
-This informal website is work in progress and sets an informative goal by reducing topics in Data Science and Physics to short articles that can be portably read accompanying a cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the *fika* choice of the day! 
+This website is work in progress and sets an informative goal by reducing topics in Data Science and Physics to short articles that can be portably read accompanying a cup of *Coffee* or *Latte Macchiato* and a cookie, or whatever is the *fika* choice of the day! 
 
 It is an attempt to connect these two fascinating research areas and highlight the numerous parallels. To afford this all the basic mathematical proofs and elementary concepts are outsourced to be looked up in the respective literature. Basic mathematical understanding is a prerequisite since the articles address Data Scientists and Physicists on common terms. I would also like to encourage you to make use of my scripts that can be found in the section *Resources* and are in general work in progress. In the design of the articles, it was important to me to highlight the connections of concepts to induce interdisciplinary thinking. I hope that this structure will facilitate the gradual illumination of the topics in a reasonable amount of time and provide enablement to come up with new ideas.
 

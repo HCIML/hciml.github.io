@@ -3,6 +3,7 @@ layout: post
 title:  "Basic: Learning a Gaussian"
 categories: [ General, model evaluation ]
 author: ghost
+featured: true
 image: assets/images/3.jpg
 ---
 Similarly to the fact that the Quantum Field Theory is largely based on Harmonic Oscillator being the only simple model that can be solved in this context analytically, the most widely used model in multivarite statistics is the Gaussian. Its mathematical properties include well-definedness in arbitrary dimensions, simplicity and a good descriptive power for empirical data, which originates from the **Central Limit Theorem**.

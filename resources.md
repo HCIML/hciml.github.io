@@ -20,5 +20,5 @@ Welcome to the resources section. In the following you will find some of my scri
 [3]:{{ https://teachres.github.io }}/download/Thesis.pdf
 {% endcomment %}
 
-![image tooltip here](/assets/images/CERN.jpg) <!-- .element height="50%" width="50%" -->
+
 
